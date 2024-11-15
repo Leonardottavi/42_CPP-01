@@ -5,15 +5,15 @@
 #                                                     +:+ +:+         +:+      #
 #    By: lottavi <lottavi@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/11/14 17:34:17 by lottavi           #+#    #+#              #
-#    Updated: 2024/11/15 15:54:37 by lottavi          ###   ########.fr        #
+#    Created: 2024/11/15 16:09:24 by lottavi           #+#    #+#              #
+#    Updated: 2024/11/15 16:31:09 by lottavi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CXX = g++
-CXXFLAGS = -Wall -Wextra -std=c++98 -Iinclude
-TARGET = build/violance
-SRC = src/main.cpp src/Weapon.cpp src/HumanA.cpp src/HumanB.cpp
+CXXFLAGS = -Wall -Wextra -std=c++98
+TARGET = build/replace
+SRC = main.cpp FileReplacer.cpp
 OBJ = $(SRC:%.cpp=build/bin/%.o)
 
 all: $(TARGET)
