@@ -6,14 +6,14 @@
 #    By: lottavi <lottavi@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/15 16:09:24 by lottavi           #+#    #+#              #
-#    Updated: 2024/11/15 16:31:09 by lottavi          ###   ########.fr        #
+#    Updated: 2024/11/20 14:17:44 by lottavi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CXX = g++
 CXXFLAGS = -Wall -Wextra -std=c++98
 TARGET = build/replace
-SRC = main.cpp FileReplacer.cpp
+SRC = main.cpp
 OBJ = $(SRC:%.cpp=build/bin/%.o)
 
 all: $(TARGET)
