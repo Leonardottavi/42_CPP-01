@@ -6,14 +6,14 @@
 #    By: lottavi <lottavi@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/15 16:33:47 by lottavi           #+#    #+#              #
-#    Updated: 2024/11/15 16:35:59 by lottavi          ###   ########.fr        #
+#    Updated: 2024/11/20 14:48:22 by lottavi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CXX = g++
-CXXFLAGS = -Wall -Wextra -std=c++98
-TARGET = /build/harl
-SRC = main.cpp Harl.cpp
+CXXFLAGS = -Wall -Wextra -std=c++98 -Iinclude
+TARGET = build/harl
+SRC = Harl.cpp main.cpp
 OBJ = $(SRC:%.cpp=build/bin/%.o)
 
 all: $(TARGET)
@@ -33,4 +33,5 @@ fclean: clean
 	rm -f $(TARGET)
 
 re: fclean all
+
 
